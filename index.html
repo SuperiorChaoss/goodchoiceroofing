@@ -15,6 +15,10 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="/" class="logo">Good Choice Roofing</a>
+          <!-- Hamburger toggle -->
+    <button class="nav-toggle" aria-label="Open menu">
+      <span class="hamburger"></span>
+    </button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -252,6 +256,14 @@
     </p>
     </div>
   </footer>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links  = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
